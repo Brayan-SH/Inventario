@@ -26,7 +26,6 @@ function Login({ onCrearCuenta }) {
               placeholder="Usuario@correo.com"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              required
             />
             <label className="form-label">Email</label>
           </div>
