@@ -4,6 +4,7 @@ import "./Login.css";
 function Login({ onCrearCuenta }) {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [error, setError] = useState("");
 
   const handleLogin = async (e) => {
     e.preventDefault();
@@ -25,7 +26,6 @@ function Login({ onCrearCuenta }) {
               placeholder="Usuario@correo.com"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              required
             />
             <label className="form-label">Email</label>
           </div>
